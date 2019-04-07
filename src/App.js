@@ -16,6 +16,7 @@ import {
 } from "./Shapes";
 
 import CircularProgress from "./CircularProgress";
+import Sparkline from "./Sparkline";
 
 class App extends Component {
   state = { value: 0 };
@@ -24,6 +25,8 @@ class App extends Component {
     return (
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
+
+        <Sparkline data={[3, 5, 7, 2, 10, 5, 3, 4, 5, 7, 8, 2]} width={300} height={100} />
 
         <button
           onClick={() =>
